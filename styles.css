@@ -1,0 +1,128 @@
+/* Styling for the peanut eat text */
+
+.peanut {
+    background-color:rgba(0,0,0,0.75);
+    border-radius: 20px;
+    border: solid white 2px;
+    font-family:"Open Sans", "Helvetica Neue", sans-serif;
+    font-size:16px;
+    font-weight:400;
+    padding: 8px;
+    box-sizing:border-box;
+    color:white;
+    display:flex;
+    justify-content:center;
+    z-index:2;
+    position: relative;
+}
+
+.peanut::before {
+    border-bottom-color:rgba(0, 0, 0, 0);
+    border-bottom-style:solid;
+    border-bottom-width:8px;
+    border-left-color:rgba(0, 0, 0, 0);
+    border-left-style:solid;
+    border-left-width:8px;
+    border-right-color:rgba(0, 0, 0, 0);
+    border-right-style:solid;
+    border-right-width:8px;
+    border-top-color:rgba(0, 0, 0, 0);
+    border-top-style:solid;
+    border-top-width:0px;
+    box-sizing:border-box;
+    content:"";
+    display:block;
+    height:8px;
+    position:absolute;
+    top:0px;
+    width:16px;
+}
+
+
+.peanut::after {
+    border-bottom-color:rgb(255, 255, 255);
+    border-bottom-style:solid;
+    border-bottom-width:8px;
+    border-left-color:rgba(0, 0, 0, 0);
+    border-left-style:solid;
+    border-left-width:8px;
+    border-right-color:rgba(0, 0, 0, 0);
+    border-right-style:solid;
+    border-right-width:8px;
+    border-top-color:rgba(0, 0, 0, 0);
+    border-top-style:solid;
+    border-top-width:0px;
+    box-sizing:border-box;
+    content:"";
+    display:block;
+    height:8px;
+    position:absolute;
+    top:-9px;
+    width:16px;
+}
+
+
+.peanut-body {
+    box-sizing: content-box;
+    color:rgb(255, 255, 255);
+    display:block;
+    font-family:"Open Sans", "Helvetica Neue", sans-serif;
+    font-size:14px;
+    font-weight:400;
+    height:18px;
+    line-height:18px;
+    margin: 8px;
+    text-align:center;
+    text-size-adjust:100%;
+}
+
+body {
+    background-color: #000;
+    font-family: "Lora";
+    color: white;
+    font-weight: 400;
+    display: flexbox;
+    flex-flow: column nowrap;
+    -webkit-font-smoothing:antialiased;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flexbox;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.category {
+    border: solid black 2px;
+    border-radius: 5px;
+    box-sizing: content-box;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: #111;
+    padding: 5px;
+}
+
+.category h1 {
+    background-color: RGB(25,25,25);
+    margin: 0px;
+    margin: -5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+h2 {
+    margin: 0px auto;
+    text-align: center;
+}
