@@ -1,5 +1,9 @@
 /* Styling for the peanut eat text */
 
+html {
+    font-size: 1.5em;
+}
+
 .peanut {
     background-color:rgba(0,0,0,0.75);
     border-radius: 20px;
@@ -125,4 +129,16 @@ main {
 h2 {
     margin: 0px auto;
     text-align: center;
+}
+
+a {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+a:active, a:hover, a:link, a:visited {
+    color: #ffffff;
+    text-decoration: underline;
+    
 }
