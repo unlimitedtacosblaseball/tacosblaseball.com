@@ -65,7 +65,7 @@ class Snackrifice extends Component {
                 </div>
                 <div class="Leaderboard-Team-Name">Miami Dale</div>
               </div>
-            </a><a class="Leaderboard-Player LeaderBoard-Shelled1"
+            </a><a className="Leaderboard-Player LeaderBoard-Shelled1"
               href="https://dev.blaseball-reference.com/players/jessica-telephone" target="new">
               <div class="Leaderboard-Player-Name-Container">
                 <div class="Leaderboard-Player-Position">4</div>
@@ -77,7 +77,8 @@ class Snackrifice extends Component {
                 </div>
                 <div class="Leaderboard-Team-Name">Philly Pies</div>
               </div>
-            </a><a class="Leaderboard-Player LeaderBoard-Shelled4"
+              <div className="shelled2">SHELLED</div>
+            </a><a className="Leaderboard-Player LeaderBoard-Shelled4"
               href="https://dev.blaseball-reference.com/players/nagomi-mcdaniel" target="new">
               <div class="Leaderboard-Player-Name-Container">
                 <div class="Leaderboard-Player-Position">5</div>
@@ -89,7 +90,9 @@ class Snackrifice extends Component {
                 </div>
                 <div class="Leaderboard-Team-Name">Baltimore Crabs</div>
               </div>
-            </a><a class="Leaderboard-Player"
+              <div className="shelled1">SHELLED</div>
+            </a>
+            <a class="Leaderboard-Player"
               href="https://dev.blaseball-reference.com/players/francisca-sasquatch" target="new">
               <div class="Leaderboard-Player-Name-Container">
                 <div class="Leaderboard-Player-Position">6</div>
@@ -158,9 +161,10 @@ class Snackrifice extends Component {
                 pitchers so you can give them the love and support they need.</p>
         <br />
         <span>
-          <p id="pitcher_matcher"
-            onclick="window.open('https://media.discordapp.net/attachments/755560065645281360/755568581374378026/tacolist2.png')">
-            🌮 Get Matched Here</p>
+          <a id="pitcher_matcher"
+            href="https://media.discordapp.net/attachments/755560065645281360/755568581374378026/tacolist2.png" target="new">
+            🌮 Get Matched Here</a>
+          <br />
         </span>
         <br />
         <p>So what are you waiting for? Defy the gods!</p>
