@@ -4,6 +4,10 @@ import Top from './top';
 import Bottom from './bottom';
 
 class Index extends Component {
+  componentDidMount() {
+    document.title = "Tacos Blaseball :: Home"
+  }
+
   render() {
     return (
       <div className="main">

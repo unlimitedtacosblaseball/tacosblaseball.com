@@ -4,6 +4,10 @@ import Top from './top';
 import Bottom from './bottom';
 
 class Snackrifice extends Component {
+  componentDidMount() {
+    document.title = "Tacos Blaseball :: Snackrifice"
+  }
+
   render() {
     return (
       <div id="main">
