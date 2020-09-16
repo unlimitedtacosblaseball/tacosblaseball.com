@@ -19,6 +19,8 @@ class Index extends Component {
           <img loading="lazy" src="https://media.discordapp.net/attachments/755560065645281360/755577280989888562/tacoconstruction.png" alt="This taco is under construction, check back soon."></img>
         </div>
         <h4> This site is in progress. Stay tuned! </h4>
+        <Link to="/resources" class="nav_link">
+          <h2 class="yellow">View team resources</h2></Link>
         <Bottom />
       </div>
 

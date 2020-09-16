@@ -5,6 +5,7 @@ import './source.css';
 import './styles.css';
 import Index from './components/index';
 import Snackrifice from './components/snackrifice';
+import Resources from './components/resources';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={ Index } />
         <Route path="/snackrifice" component={ Snackrifice } />
+        <Route path="/resources" component={ Resources } />
       </Switch>
     </div>
   );

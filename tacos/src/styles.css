@@ -120,6 +120,26 @@ p {
     margin-bottom: 18px;
 }
 
+/* eltrov added this for the BETA tag */
+
+#beta {
+    /* other formatting */
+    padding: 2px 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: hsla(0, 0%, 39.6%, .65098);
+    display: inline;
+}
+
+#beta p {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline;
+}
+
 .yellow {
     color: RGB(255, 224, 130);
 }
@@ -129,7 +149,7 @@ p {
         font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
     h3 {
-        font-size: calc(40px + 6 * ((100vw - 320px) / 680));
+        font-size: calc(40px + 24 * ((100vw - 320px) / 680));
     }
 }
 
