@@ -1,57 +1,90 @@
 /* Custom styling. Overrides sources where needed. */
 
+/* latin-ext */
+
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v16/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Lora';
+    font-style: normal;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v16/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 html {
-    font-size: 1.2em;
-    max-width: 38rem;
-    padding: 2rem;
+    font-size: 16pt;
+    max-width: 54rem;
+    padding: 18px 4rem;
     margin: auto;
+    text-rendering: optimizeLegibility;
+    background-color: #000;
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+        background-image: url("https://media.discordapp.net/attachments/755560065645281360/755804072082276452/tile.png");
+        background-repeat: repeat;
+    }
 }
 
 body {
-    background-color: #000;
-    font-family: "Lora";
-    color: white;
     font-weight: 400;
-    height: 100%;
+    background-color: #000;
+    font-family: "Lora", "Courier New", monospace, serif;
+    color: white;
     margin: 0px;
-    padding: 0px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 header {
     width: 100%;
     text-align: center;
-    margin: 0px;
+    margin: 18px 0px;
     padding: 0px;
 }
 
 footer {
     width: 100%;
     text-align: center;
-    margin: 0px;
+    margin: 10px 0px;
     padding: 0px;
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    grid-area: main;
+    margin: 10px 0px;
 }
 
 #start-text {
     flex-grow: 2;
 }
 
-h2 {
-    margin: 0px auto;
-    text-align: center;
-}
-
 a.nav_link {
     display: block;
     margin: 0px auto;
     text-align: center;
+    font-style: italic;
 }
 
 a.nav_link:active, a.nav_link:hover, a.nav_link:link, a.nav_link:visited {
@@ -61,7 +94,6 @@ a.nav_link:active, a.nav_link:hover, a.nav_link:link, a.nav_link:visited {
 
 #pics {
     display: flex;
-    display: none;
     flex-flow: column wrap;
 }
 
@@ -69,24 +101,64 @@ a.nav_link:active, a.nav_link:hover, a.nav_link:link, a.nav_link:visited {
     flex: 0 0 40%;
 }
 
-img {
-    width: 512px;
-    ;
+.img-box {
+    margin: 10px auto;
+    text-align: center;
+    display: none"
+
 }
 
-h3 {
-    color: RGB(255, 224, 130);
-    margin: 0px auto;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 600;
+img {
+    width: 512px;
 }
 
 #pitcher_matcher {
-    margin: 0px auto;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(100, 55, 110);
     border-radius: 30px;
-    font-size: 1.25em;
+    font-size: 24px;
+    font-weight: 600;
+    box-sizing: content-box;
 }
+
+h1 {
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+h2 {
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+h3 {
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 64px;
+    margin-bottom: 18px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 18px;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+.yellow {
+    color: RGB(255, 224, 130);
+}
+
+/* Tacos!: Bold, 48 
+Snackrifice: Bold, 64 (or you can do some fun vh stuff) 
+Plan: Bold, 36 
+Matched: Bold, 24 (make sure it's a pill button or have 5px rounded edges) */
