@@ -1,7 +1,10 @@
-/* Styling for the peanut eat text */
+/* Custom styling. Overrides sources where needed. */
 
 html {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    max-width: 38rem;
+    padding: 2rem;
+    margin: auto;
 }
 
 body {
@@ -10,31 +13,20 @@ body {
     color: white;
     font-weight: 400;
     height: 100%;
-    display: grid;
-    grid-template-rows: 120px auto 120px;
-    grid-template-columns: auto;
-    grid-template-areas: 
-      "header"
-      "main"
-      "footer";
     margin: 0px;
     padding: 0px;
-  }
+}
 
 header {
     width: 100%;
-    height: 120px;
     text-align: center;
-    grid-area: header;
     margin: 0px;
     padding: 0px;
 }
 
 footer {
     width: 100%;
-    height: 120px;
     text-align: center;
-    grid-area: footer;
     margin: 0px;
     padding: 0px;
 }
@@ -45,8 +37,6 @@ main {
     justify-content: center;
     align-items: center;
     grid-area: main;
-    overflow-y: auto;
-    padding-top: 120px;
 }
 
 #start-text {
@@ -58,20 +48,20 @@ h2 {
     text-align: center;
 }
 
-a {
+a.nav_link {
     display: block;
     margin: 0px auto;
     text-align: center;
 }
 
-a:active, a:hover, a:link, a:visited {
+a.nav_link:active, a.nav_link:hover, a.nav_link:link, a.nav_link:visited {
     color: #ffffff;
     text-decoration: underline;
-    
 }
 
 #pics {
     display: flex;
+    display: none;
     flex-flow: column wrap;
 }
 
@@ -80,5 +70,23 @@ a:active, a:hover, a:link, a:visited {
 }
 
 img {
-    width: 256px;
+    width: 512px;
+    ;
+}
+
+h3 {
+    color: RGB(255, 224, 130);
+    margin: 0px auto;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#pitcher_matcher {
+    margin: 0px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(100, 55, 110);
+    border-radius: 30px;
+    font-size: 1.25em;
 }
