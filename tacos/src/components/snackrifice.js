@@ -13,12 +13,9 @@ class Snackrifice extends Component {
       <div id="main">
         <Top />
         <div id="snackrifice">
-          <div class="img-box" style={ { display: 'none' } }><img
-            src="https://media.discordapp.net/attachments/734574989457621034/755801659963080865/day_80.png"></img>
-          </div>
           <h3 class="yellow">#SNACKRIFICE</h3>
           <div class="img-box"><img
-            src="https://media.discordapp.net/attachments/734574989457621034/755809539974103050/Tacos-belong-in-shells-PixTeller.png"></img>
+            src="https://media.discordapp.net/attachments/734574989457621034/755801659963080865/day_80.png"></img>
           </div>
           <p>Listen, we know you love getting filthy rich off of Axel Trololol or PolkaDot Patterson, but do you
           want
@@ -27,6 +24,9 @@ class Snackrifice extends Component {
           <p>Get every single Tacos pitcher up to the top 10, above the red line. This will shell all of our
           pitchers
                 (A natural evolution for a Taco) and save the other players.</p>
+        </div>
+        <div class="img-box"><img
+          src="https://media.discordapp.net/attachments/734574989457621034/755809539974103050/Tacos-belong-in-shells-PixTeller.png"></img>
         </div>
         <div class="Leaderboard-List">
           <ul class="Leaderboard-Player-Container"><a class="Leaderboard-Player"

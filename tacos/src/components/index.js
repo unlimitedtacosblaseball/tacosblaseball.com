@@ -12,6 +12,9 @@ class Index extends Component {
     return (
       <div className="main">
         <Top />
+        <div class="img-box"><img
+          src="https://media.discordapp.net/attachments/734574989457621034/755801659963080865/day_80.png"></img>
+        </div>
         <Link to="/snackrifice" class="nav_link">
           <h2 class="yellow"> View the snackrifice page.</h2>
         </Link>
