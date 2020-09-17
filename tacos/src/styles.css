@@ -74,7 +74,7 @@ a.nav_link:active, a.nav_link:hover, a.nav_link:link, a.nav_link:visited {
 
 img {
     max-width: 512px;
-    min-width: 256px;
+    min-width: 128px;
     width: 100%;
 }
 
