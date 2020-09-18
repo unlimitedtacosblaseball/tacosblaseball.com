@@ -14,9 +14,19 @@ class Snackrifice extends Component {
         <Top />
         <div id="snackrifice">
           <h3 class="yellow">#SNACKRIFICE</h3>
-          <div class="img-box"><img
-            src="https://media.discordapp.net/attachments/734574989457621034/755801659963080865/day_80.png"></img>
-          </div>
+          <h2><span class="yellow">Stage 2:</span> Drop the Tacos</h2>
+          <p>It's been a wild ride, but we still need your help.</p>
+          <p>Now that our pitchers are shelled, it is important to preserve them for season 8. If you are idolizing them, stop now. We need them out of positions 14 and 21. We cannot risk blessing messing this up.</p>
+          <br />
+          <h2>Thank you for your support!</h2>
+          <div class="img-box"><img src="https://cdn.discordapp.com/attachments/755560065645281360/756633189958549544/unknown.png"></img></div>
+          <p>It will take us some time to put together the correct words to thank everyone who was involved in helping us achieve this monumental task.</p>
+          <p>Thanks to your efforts, the Tacos were able to sacrifice our pitchers and save your players. We were also able to bring our challenge directly to the blaseball gods.</p>
+          <p>Please come back for more information as we are able to collect it.</p>
+          <h4>The Legume Descends</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/KhFnT42anvU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <br />
+          <h2><span class="yellow">Stage 1:</span> Save your players, Shell our pitchers.</h2>
           <p>Listen, we know you love getting filthy rich off of Axel Trololol or PolkaDot Patterson, but do you
           want
                 them to be trapped in a peanut shell for the next season?</p>
@@ -185,6 +195,9 @@ class Snackrifice extends Component {
             <br />
             <div><img loading="lazy"
               src="https://media.discordapp.net/attachments/755560065645281360/755568676630954044/snackrificesunrise.png"></img>
+            </div>
+            <div class="img-box"><img
+              src="https://media.discordapp.net/attachments/734574989457621034/755801659963080865/day_80.png"></img>
             </div>
           </details>
         </div>
