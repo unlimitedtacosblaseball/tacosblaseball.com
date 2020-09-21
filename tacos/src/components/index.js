@@ -15,6 +15,9 @@ class Index extends Component {
         <div class="img-box"><img
           src="https://media.discordapp.net/attachments/734574989457621034/755801659963080865/day_80.png"></img>
         </div>
+        <Link to="/seasonate" class="nav_link">
+          <h2 class="yellow"> View the #seasonATE page.</h2>
+        </Link>
         <Link to="/snackrifice" class="nav_link">
           <h2 class="yellow"> View the snackrifice page.</h2>
         </Link>
