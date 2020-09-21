@@ -72,6 +72,17 @@ a.nav_link:active, a.nav_link:hover, a.nav_link:link, a.nav_link:visited {
     text-align: center;
 }
 
+.vid-box {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 img {
     max-width: 512px;
     min-width: 128px;
