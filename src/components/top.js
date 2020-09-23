@@ -5,10 +5,13 @@ class Top extends Component {
   render() {
     return (
       <div className="header">
-        <Link to="/"><h1>The Unlimited Tacos Homepage</h1></Link>
-        <div id="beta">
-          <p>Beta</p>
-        </div>
+        <Link to="/">
+          <h1>The Los&nbsp;Angeli Unlimited&nbsp;Tacos</h1>
+          <h2 id="banner-subtext">Anti&#8209;Capitalist and proud of it</h2>
+          <div id="beta">
+            <p>Beta</p>
+          </div>
+        </Link>
       </div>
     )
   }

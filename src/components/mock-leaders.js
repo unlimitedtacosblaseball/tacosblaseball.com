@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Top from './top';
-import Bottom from './bottom';
 
 class Leaderboard extends Component {
   componentDidMount() {

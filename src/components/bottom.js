@@ -5,7 +5,7 @@ class Nav extends Component {
     return (
       <div className="footer">
         <p>Brought to you by the Unlimited Tacos.</p>
-        <h3 class="yellow">EAT</h3>
+        <h1 class="yellow">EAT</h1>
       </div>
     )
   }

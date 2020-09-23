@@ -6,7 +6,8 @@ import Leaderboard from './mock-leaders';
 
 class Snackrifice extends Component {
   componentDidMount() {
-    document.title = "Tacos Blaseball :: Snackrifice"
+    document.title = "Tacos Blaseball :: Snackrifice";
+    document.getElementById("banner-subtext").innerText = "We shelled our own pitchers";
   }
 
   render() {
@@ -14,8 +15,8 @@ class Snackrifice extends Component {
       <div id="main">
         <Top />
         <div id="snackrifice">
-          <h3 class="yellow">#SNACKRIFICE</h3>
-          <h2>Thank you for your support!</h2>
+          <h2 class="yellow">#SNACKRIFICE</h2>
+          <h3>Thank you for your support!</h3>
           <div class="img-box"><img src="https://cdn.discordapp.com/attachments/734574989457621034/757365017787236382/og9NipC.png"></img></div>
           <p>Hello everyone,</p>
           <p>This is a message from the Tacos to you, yes you, the person reading this.</p>
@@ -30,20 +31,20 @@ class Snackrifice extends Component {
           <p>Love,</p>
           <p><span class="yellow">The Unlimited Tacos.</span></p>
           <Link to="/seasonate" class="nav_link">
-            <h2 class=" yellow">See #seasonATE</h2>
+            <h3 class=" yellow">See #seasonATE</h3>
           </Link>
           <div class="img-box"><img src="https://cdn.discordapp.com/attachments/755560065645281360/756633189958549544/unknown.png" alt="Leaderboard after #SNACKRIFICE showing all pitchers shelled."></img></div>
           <p>Thanks to your efforts, the Tacos were able to sacrifice our pitchers and save your players. We were also able to bring our challenge directly to the blaseball gods.</p>
-          <h2><span class="yellow">Stage 2:</span> Drop the Tacos</h2>
+          <h3><span class="yellow">Stage 2:</span> Drop the Tacos</h3>
           <p>It's been a wild ride, but we still need your help.</p>
           <p>Now that our pitchers are shelled, it is important to preserve them for season 8. If you are idolizing them, stop now. We need them out of positions 14 and 21. We cannot risk blessing messing this up.</p>
           <br />
-          <h4>The Legume Descends</h4>
+          <h3>The Legume Descends</h3>
           <div class="vid-box">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KhFnT42anvU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KhFnT42anvU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="The Peanut Arrives"></iframe>
           </div>
           <br />
-          <h2><span class="yellow">Stage 1:</span> Save your players, Shell our pitchers.</h2>
+          <h3><span class="yellow">Stage 1:</span> Save your players, Shell our pitchers.</h3>
           <p>Listen, we know you love getting filthy rich off of Axel Trololol or PolkaDot Patterson, but do you want them to be trapped in a peanut shell for the next season?</p>
           <h4>Here's the Plan</h4>
           <p>Get every single Tacos pitcher up to the top 10, above the red line. This will shell all of our pitchers (A natural evolution for a Taco) and save the other players.</p>
@@ -58,7 +59,7 @@ class Snackrifice extends Component {
         <span>
           <a id="pitcher_matcher"
             href="https://media.discordapp.net/attachments/755560065645281360/755568581374378026/tacolist2.png" target="new">
-            🌮 Get Matched Here</a>
+            🌮&nbsp;Get&nbsp;Matched&nbsp;Here</a>
           <br />
         </span>
         <br />
@@ -88,7 +89,7 @@ class Snackrifice extends Component {
         </div>
         <br />
         <Link to="/" class="nav_link">
-          <h2 class=" yellow">Go back home</h2>
+          <h3 class=" yellow">Go back home</h3>
         </Link>
         <Bottom />
       </div >

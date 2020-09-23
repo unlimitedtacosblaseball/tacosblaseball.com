@@ -6,14 +6,15 @@ import Bottom from './bottom';
 class seasonATE extends Component {
   componentDidMount() {
     document.title = "Tacos Blaseball :: seasonATE"
+    document.getElementById("banner-subtext").innerText = "We're sleepy now";
   }
 
   render() {
     return (
       <div id="main">
         <Top />
-        <div id="snackrifice">
-          <h3 class="yellow">#seasonATE</h3>
+        <div id="seasonATE">
+          <h2 class="yellow">#seasonATE</h2>
           <div class="img-box">
             <img src="https://cdn.discordapp.com/attachments/734574989457621034/757708864111247461/image0.png" alt="Contents in plain text below"></img>
           </div>
@@ -27,10 +28,10 @@ class seasonATE extends Component {
         </div>
         <br />
         <Link to="/snackrifice" class="nav_link">
-          <h2 class="yellow">Go to the #SNACKRIFICE page</h2>
+          <h3 class="yellow">Go to the #SNACKRIFICE page</h3>
         </Link>
         <Link to="/" class="nav_link">
-          <h2 class="yellow">Go back home</h2>
+          <h3 class="yellow">Go back home</h3>
         </Link>
         <Bottom />
       </div >
