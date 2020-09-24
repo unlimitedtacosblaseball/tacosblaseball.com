@@ -1,10 +1,12 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import './App.css';
-import Index from './components/index';
-import Snackrifice from './components/snackrifice';
-import seasonATE from './components/season-ate';
-import Resources from './components/resources';
+import Index from './pages/index/index';
+import Snackrifice from './pages/snackrifice/snackrifice';
+import seasonATE from './pages/seasonate/seasonate';
+import Resources from './pages/resources/resources';
+// Add your pages here.
+import Template from './pages/template/template'
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/snackrifice" component={ Snackrifice } />
         <Route path="/seasonate" component={ seasonATE } />
         <Route path="/resources" component={ Resources } />
+        <Route path="/template" component={ Template } />
       </Switch>
     </div>
   );

@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class Leaderboard extends Component {
-  componentDidMount() {
-    document.title = "Tacos Blaseball :: Home"
-  }
-
   render() {
     return (
       <div class="Leaderboard-List">

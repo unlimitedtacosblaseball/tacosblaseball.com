@@ -53,8 +53,9 @@ body {
 .footer {
     width: 100%;
     text-align: center;
-    margin: 10px 0px;
-    padding: 0px;
+    margin: 10px 5px;
+    padding: 5px;
+    border-top: 5px solid #64376e
 }
 
 .main {
@@ -70,15 +71,15 @@ body {
     flex-grow: 2;
 }
 
-a.nav_link {
+.nav_link {
     display: block;
     margin: 0px auto;
     text-align: center;
     font-style: italic;
+    text-decoration: underline;
 }
 
-a.nav_link:active, a.nav_link:hover, a.nav_link:link, a.nav_link:visited {
-    color: #ffffff;
+.nav_link:active, .nav_link:hover, .nav_link:link, .nav_link:visited {
     text-decoration: underline;
 }
 
@@ -213,7 +214,7 @@ p {
     display: inline;
     position: absolute;
     right: 0px;
-    top: -44px;
+    top: -36px;
 }
 
 #beta p {

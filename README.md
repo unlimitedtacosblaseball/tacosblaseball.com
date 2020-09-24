@@ -1,3 +1,15 @@
+# tacosblaseball.com
+
+## Adding content:
+
+To add content, copy the `template` directory in `/src/pages/` and name it whatever you want your new page to be. Rename the files to match, and start making the content in the markdown file. GitHub markdown rules are respected.
+
+To add links, either view the other pages, or reach out to a technical person.
+
+---
+
+GENERIC README STUFF BELOW
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
