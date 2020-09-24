@@ -11061,48 +11061,32 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 }
 
 @-webkit-keyframes f {
-    0% {
-        transform: rotateX(180deg) translate(1px, -1px);
-        opacity: .95
+    10%, 90% {
+        transform: translate(1px, -1px);
     }
-    25% {
-        transform: rotateX(0deg) translate(-1px, 2px);
-        opacity: .96
+    20%, 80% {
+        transform: translate(-1px, -2px);
     }
-    50% {
-        transform: rotateX(180deg) translate(-1px, -2px);
-        opacity: .99
+    30%, 50%, 70% {
+        transform: translate(1px, -1px);
     }
-    75% {
-        transform: rotateX(0deg) translate(1px, 1px);
-        opacity: .93
-    }
-    to {
-        transform: rotateX(180deg) translate(-1px, 1px);
-        opacity: .97
+    40%, 60% {
+        transform: translate(1px, -2px);
     }
 }
 
 @keyframes f {
-    0% {
-        transform: rotateX(180deg) translate(1px, -1px);
-        opacity: .95
+    10%, 90% {
+        transform: translate(1px, -1px);
     }
-    25% {
-        transform: rotateX(0deg) translate(-1px, 2px);
-        opacity: .96
+    20%, 80% {
+        transform: translate(-1px, -2px);
     }
-    50% {
-        transform: rotateX(180deg) translate(-1px, -2px);
-        opacity: .99
+    30%, 50%, 70% {
+        transform: translate(1px, -1px);
     }
-    75% {
-        transform: rotateX(0deg) translate(1px, 1px);
-        opacity: .93
-    }
-    to {
-        transform: rotateX(180deg) translate(-1px, 1px);
-        opacity: .97
+    40%, 60% {
+        transform: translate(1px, -2px);
     }
 }
 
