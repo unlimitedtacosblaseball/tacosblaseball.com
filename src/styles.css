@@ -252,6 +252,7 @@ p {
         font-size: 22px;
         background-image: url("https://media.discordapp.net/attachments/755560065645281360/755804072082276452/tile.png");
         background-repeat: repeat;
+        background-attachment: fixed;
     }
     #pitcher_matcher {
         font-size: calc(24px + 8 * ((100vw - 320px) / 680));
