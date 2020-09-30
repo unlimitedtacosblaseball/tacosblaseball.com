@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Top from '../../components/top';
 import Bottom from '../../components/bottom';
-import Leaderboard from './mock-leaders';
 import ReactMarkdown from 'react-markdown/with-html';
 import markdown from "./snackrifice.md"
 
@@ -18,7 +16,7 @@ class Snackrifice extends Component {
     // Set the title
     document.title = "Tacos Blaseball :: Snackrifice";
     // Adjust the subheading
-    document.getElementById("banner-subtext").innerText = "We shelled our own pitchers";
+    document.getElementById("banner-subtext").innerText = "WE SHELLED OUR OWN PITCHERS";
 
     // Load markdown contents.
     fetch(markdown)

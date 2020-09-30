@@ -17,7 +17,7 @@ class seasonATE extends Component {
     // Set the title
     document.title = "Tacos Blaseball :: seasonATE"
     // Adjust the subheading
-    document.getElementById("banner-subtext").innerText = "Sshhhh... We're sleepy now";
+    document.getElementById("banner-subtext").innerText = "SSHHHH... WE'RE SLEEPY NOW";
 
     // Load markdown contents.
     fetch(markdown)

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Top from '../../components/top';
 import Bottom from '../../components/bottom';
 import ReactMarkdown from 'react-markdown/with-html';
@@ -19,7 +18,7 @@ class Index extends Component {
     // Set the title
     document.title = "Tacos Blaseball :: Homepage"
     // Adjust the subheading, if you want to.
-    document.getElementById("banner-subtext").innerText = "72° and infinite.";
+    document.getElementById("banner-subtext").innerText = "72° AND INFINITE";
 
     // Load markdown contents.
     fetch(markdown)
