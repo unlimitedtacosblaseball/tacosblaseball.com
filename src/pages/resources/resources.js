@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Top from '../../components/top';
 import Bottom from '../../components/bottom';
 import ReactMarkdown from 'react-markdown/with-html';
@@ -17,7 +16,7 @@ class Resources extends Component {
     // Set the title
     document.title = "Tacos Blaseball :: resources"
     // Adjust the subheading
-    document.getElementById("banner-subtext").innerText = "Sharing is caring";
+    document.getElementById("banner-subtext").innerText = "SHARING IS CARING";
 
     // Load markdown contents.
     fetch(markdown)

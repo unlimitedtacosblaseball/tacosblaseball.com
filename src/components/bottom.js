@@ -5,11 +5,11 @@ class Nav extends Component {
   render() {
     return (
       <div className="footer">
-        <Link to="/" class="nav_link">
-          <h3 class="yellow">Go back home</h3>
+        <Link to="/" className="nav_link">
+          <h3 className="yellow">Go back home</h3>
         </Link>
         <p>Brought to you by the Unlimited Tacos.</p>
-        <h1 class="yellow">EAT</h1>
+        <h2>EAT</h2>
       </div>
     )
   }
