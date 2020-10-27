@@ -67,8 +67,6 @@ Get every single Tacos pitcher up to the top 10, above the red line. This will s
 
 </div>
 
-<Leaderboard />
-
 If you're not sure who to support, we have an easy guide that will match you with one of our lovely pitchers so you can give them the love and support they need.
 
 <span>
