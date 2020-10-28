@@ -1,26 +1,29 @@
-import React from 'react';
-import { Route, Switch } from 'react-router-dom'
-import Index from './pages/index/index';
-import Snackrifice from './pages/snackrifice/snackrifice';
-import seasonATE from './pages/seasonate/seasonate';
-import Resources from './pages/resources/resources';
-import Friends from './pages/friends/friends';
-import Lost from './pages/lost/lost';
-// Add your pages here.
-import Template from './pages/template/template'
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Bottom from "./components/bottom";
+import Page from "./components/Page";
+import Top from "./components/top";
 
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route exact path="/" component={ Index } />
-        <Route path="/snackrifice" component={ Snackrifice } />
-        <Route path="/seasonate" component={ seasonATE } />
-        <Route path="/resources" component={ Resources } />
-        <Route path="/friends" component={ Friends } />
-        <Route path="/template" component={ Template } />
-        <Route path="/" component={ Lost } />
-      </Switch>
+      <div id="main">
+        <Top />
+        <div id="index">
+          <Switch>
+            <Route exact path="/">
+              <Page slug={"index"} title="Homepage" />
+            </Route>
+            <Route path="/:slug">
+              {({ match: { params } }) => <Page slug={params.slug} />}
+            </Route>
+            <Route path="/">
+              <Page slug={"lost"} title="404" />
+            </Route>
+          </Switch>
+        </div>
+        <Bottom />
+      </div>
     </div>
   );
 }
