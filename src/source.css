@@ -10958,8 +10958,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     align-items: center
 }
 
+/*
 .Leaderboard-Player-Deceased-Icon {
-    background-image: url(/static/media/player_deceased_icon.2febfc5d.svg);
+    background-image: url(blaseball.com/static/media/player_deceased_icon.2febfc5d.svg);
     background-repeat: no-repeat;
     padding: 15px;
     margin: 5px;
@@ -10968,6 +10969,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     justify-content: center;
     align-items: center
 }
+*/
 
 .Leaderboard-Team-Emoji {
     font-size: 14pt
@@ -11704,6 +11706,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     color: #fff4a1
 }
 
+/*
 .About-Ticket {
     height: 200px;
     width: 200px;
@@ -11722,6 +11725,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
     -webkit-animation-direction: alternate;
     animation-direction: alternate
 }
+*/
 
 .About-Button {
     display: flex;
