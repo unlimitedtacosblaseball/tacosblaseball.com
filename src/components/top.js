@@ -9,7 +9,7 @@ class Top extends Component {
           <h1>The Los&nbsp;Angeli Unlimited&nbsp;Tacos</h1>
           <h2 id="banner-subtext">Anti&#8209;Capitalist and proud of it</h2>
           <div id="beta">
-            <p>Beta</p>
+            Beta
           </div>
         </Link>
       </div>
