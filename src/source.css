@@ -37,7 +37,6 @@
     box-sizing: border-box
 }
 
-
 html {
     font-family: sans-serif;
     line-height: 1.15;
@@ -13012,7 +13011,11 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center
 }
 
-.Leaderboard-Shelled1:after, .Leaderboard-Shelled2:after, .Leaderboard-Shelled3:after, .Leaderboard-Shelled4:after, .Leaderboard-Shelled5:after {
+.Leaderboard-Shelled1:after,
+.Leaderboard-Shelled2:after,
+.Leaderboard-Shelled3:after,
+.Leaderboard-Shelled4:after,
+.Leaderboard-Shelled5:after {
     content: "SHELLED";
     position: absolute;
     background-color: red;
@@ -13079,31 +13082,49 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @-webkit-keyframes f {
-    10%, 90% {
+
+    10%,
+    90% {
         transform: translate(1px, -1px);
     }
-    20%, 80% {
+
+    20%,
+    80% {
         transform: translate(-1px, -2px);
     }
-    30%, 50%, 70% {
+
+    30%,
+    50%,
+    70% {
         transform: translate(1px, -1px);
     }
-    40%, 60% {
+
+    40%,
+    60% {
         transform: translate(1px, -2px);
     }
 }
 
 @keyframes f {
-    10%, 90% {
+
+    10%,
+    90% {
         transform: translate(1px, -1px);
     }
-    20%, 80% {
+
+    20%,
+    80% {
         transform: translate(-1px, -2px);
     }
-    30%, 50%, 70% {
+
+    30%,
+    50%,
+    70% {
         transform: translate(1px, -1px);
     }
-    40%, 60% {
+
+    40%,
+    60% {
         transform: translate(1px, -2px);
     }
 }
@@ -13112,7 +13133,9 @@ input[type=number]::-webkit-outer-spin-button {
     .Leaderboard-Player-Position {
         width: 15px
     }
-    .Leaderboard-Player-Name, .Leaderboard-Team-Name {
+
+    .Leaderboard-Player-Name,
+    .Leaderboard-Team-Name {
         font-size: 16px;
         margin: 0
     }
@@ -13125,7 +13148,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: 700
 }
 
-.Standings-League, .Standings-Subleague {
+.Standings-League,
+.Standings-Subleague {
     display: flex;
     font-family: "Lora", "Courier New", monospace, serif;
     align-items: center
@@ -13226,12 +13250,15 @@ input[type=number]::-webkit-outer-spin-button {
     .Standings-League {
         font-size: 24px
     }
+
     .Standings-Subleague {
         flex: 0 1 100%
     }
+
     .Standings-Subleague-Container {
         flex-direction: column
     }
+
     .Standings-Team {
         font-size: 18px;
         margin: 0
@@ -13254,7 +13281,8 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: center
 }
 
-.PlayoffsEnd-Body, .PlayoffsEnd-Header {
+.PlayoffsEnd-Body,
+.PlayoffsEnd-Header {
     font-family: "Lora", "Courier New", monospace, serif
 }
 
@@ -13267,7 +13295,8 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 24px
 }
 
-.PlayoffsEnd-Callout, .PlayoffsEnd-End {
+.PlayoffsEnd-Callout,
+.PlayoffsEnd-End {
     font-family: "Lora", "Courier New", monospace, serif
 }
 
@@ -13398,6 +13427,7 @@ input[type=number]::-webkit-outer-spin-button {
     0% {
         transform: translateZ(0)
     }
+
     to {
         transform: translate3d(-100%, 0, 0)
     }
@@ -13407,6 +13437,7 @@ input[type=number]::-webkit-outer-spin-button {
     0% {
         transform: translateZ(0)
     }
+
     to {
         transform: translate3d(-100%, 0, 0)
     }
@@ -13417,7 +13448,9 @@ input[type=number]::-webkit-outer-spin-button {
         width: calc(100% - 20px);
         margin: 0 8px 10px
     }
-    .EventTicker-Group, .EventTicker-News {
+
+    .EventTicker-Group,
+    .EventTicker-News {
         font-size: 12px
     }
 }
@@ -13438,7 +13471,8 @@ input[type=number]::-webkit-outer-spin-button {
     flex-wrap: wrap
 }
 
-.Header-Logo, .Header-Logo-Era {
+.Header-Logo,
+.Header-Logo-Era {
     font-family: "Lora", "Courier New", monospace, serif;
     font-weight: 700;
     text-transform: uppercase
@@ -13565,48 +13599,61 @@ input[type=number]::-webkit-outer-spin-button {
         width: 100%;
         align-items: flex-start
     }
+
     .Header-Logo-Era {
         font-size: 14px;
         margin-top: 0
     }
+
     .Header-Logo-SubEra {
         font-size: 14px
     }
+
     .Header-Logo-Tag {
         font-size: 12px;
         margin: 0 5px;
         padding: 5px 5px 2px
     }
+
     .Header-Social-Faq {
         margin-right: 5px
     }
+
     .Header-Social-Faq-Inner {
         padding: 6px 5px
     }
+
     .Header-Social-Faq-Icon {
         font-size: 12px;
         margin: 0 3px
     }
+
     .Header-Social-Patreon {
         margin-right: 5px
     }
+
     .Header-Social-Patreon-Icon {
         font-size: 12px
     }
+
     .Header-Social-Patreon-Inner {
         padding: 4px 5px
     }
+
     .Header-Social-Follow {
         margin-right: -10px
     }
+
     .Header-Social-Follow-Inner {
         padding-top: 8px;
         width: 78px
     }
+
     .Header-Social-Follow-Icon {
         font-size: 16px;
         margin: 0 3px
     }
+
     .Header-Social-Follow-Triangle {
         border-left-width: 40px;
         border-right-width: 40px;
@@ -13728,9 +13775,7 @@ input[type=number]::-webkit-outer-spin-button {
     background-size: contain;
     background-position: 50%;
     background-repeat: no-repeat;
-    /*
     background-image: url(/static/media/ticket.3cebc08e.png);
-    */
     -webkit-animation-name: floaty;
     animation-name: floaty;
     -webkit-animation-duration: 2s;
