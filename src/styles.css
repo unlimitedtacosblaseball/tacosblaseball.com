@@ -198,11 +198,9 @@ p {
 /* END HEADER STYLES */
 
 /* eltrov added this for the BETA tag */
-
 #beta {
     background-color: #505050;
     text-transform: uppercase;
-    
     margin: 10px;
     padding: 5px;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
@@ -214,7 +212,6 @@ p {
     left: 10px;
     top: -30px;
 }
-
 /* End BETA tag */
 
 /* BEGIN MEDIA QUERIES */
