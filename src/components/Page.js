@@ -9,7 +9,8 @@ const Page = ({ slug, title }) => {
 
   useEffect(() => {
     document.title = `${TITLE} :: ${title || slug}`;
-  }, [slug, title]);
+    document.head.innerHTML += "<link href='https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Open+Sans:wght@400;700&amp;display=swap' rel='stylesheet'>";
+  }, [slug, title]); 
 
   if (!markdown && !loading) return <Page slug={"lost"} title="404" />;
   return <ReactMarkdown source={markdown} escapeHtml={false} />;
