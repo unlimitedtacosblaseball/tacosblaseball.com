@@ -68,10 +68,7 @@ body {
     text-decoration: underline;
 }
 
-.nav_link:active,
-.nav_link:hover,
-.nav_link:link,
-.nav_link:visited {
+.nav_link:active, .nav_link:hover, .nav_link:link, .nav_link:visited {
     text-decoration: underline;
 }
 
@@ -148,8 +145,7 @@ p {
     color: RGB(255, 224, 130);
 }
 
-.shelled1,
-.shelled2 {
+.shelled1, .shelled2 {
     position: absolute;
     background-color: red;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
@@ -185,8 +181,7 @@ p {
     color: #9c80a6;
 }
 
-.header h2,
-.footer h2 {
+.header h2, .footer h2 {
     font-family: 'ChunkFive', sans-serif;
     color: #FACF33;
     text-shadow: 0px 2px 5px #fff, 0px 2px 10px #000;
@@ -200,19 +195,26 @@ p {
 /* eltrov added this for the BETA tag */
 
 #beta {
-    background-color: #505050;
-    text-transform: uppercase;
-    
-    margin: 10px;
-    padding: 5px;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    font-weight: 700;
+    /* other formatting */
+    padding: 2px 5px;
+    color: #fff;
+    text-decoration: none;
     border-radius: 3px;
+    background-color: #505050;
+    display: inline;
     position: absolute;
-    left: 10px;
-    top: -30px;
+    right: 8px;
+    top: -36px;
+}
+
+#beta p {
+    text-transform: uppercase;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline;
+    padding: 0;
+    margin: 0;
 }
 
 /* End BETA tag */
@@ -242,15 +244,12 @@ p {
         background-repeat: repeat;
         background-attachment: fixed;
     }
-
     #pitcher_matcher {
         font-size: calc(24px + 8 * ((100vw - 320px) / 680));
     }
-
     .banner h1 {
         font-size: 64px;
     }
-
     .banner h2 {
         font-size: 36px;
     }
