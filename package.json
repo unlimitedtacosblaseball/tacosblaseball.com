@@ -38,5 +38,7 @@
     ]
   },
   "homepage": ".",
-  "devDependencies": {}
+  "devDependencies": {
+    "static": "^2.0.0"
+  }
 }
