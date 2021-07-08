@@ -9,7 +9,7 @@
 html {
     /* font-size: 16pt; */
     max-width: 54rem;
-    padding: 18px 4rem;
+    padding: 1rem;
     margin: auto;
     text-rendering: optimizeLegibility;
     background-color: #000;
@@ -22,8 +22,8 @@ body {
     color: white;
     margin: 0px;
     padding-top: 20px;
+    padding: 32px;
     border-radius: 20px;
-    text-align: center;
 }
 
 #root {
@@ -195,6 +195,38 @@ p {
     transform: rotateX(20deg);
 }
 
+
+/* emulating discord channel mention styles by evie */
+.channel {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    padding: 1px 2px;
+    background-color: #3e42d180;
+    border-radius: 4px;
+}
+.channel:hover {
+    background-color: #3e42d1;
+}
+
+/* aside styles for the welcome page */
+aside {
+    width: calc(2.5rem * 6);
+    text-align: center;
+    clear: both;
+    background-color: #391c4080;
+    border-radius: 8px;
+    padding: 4px;
+}
+.red-aside {
+    border: solid medium #cb1e27;
+}
+.yellow-aside {
+    border: solid medium #f8c828;
+}
+.green-aside {
+    border: solid medium #28c160;
+}
+
 /* END HEADER STYLES */
 
 /* eltrov added this for the BETA tag */
@@ -235,9 +267,6 @@ p {
 @media screen and (min-width: 1000px) {
     html {
         font-size: 22px;
-        background-image: url("https://media.discordapp.net/attachments/755560065645281360/755804072082276452/tile.png");
-        background-repeat: repeat;
-        background-attachment: fixed;
     }
 
     #pitcher_matcher {
@@ -250,6 +279,9 @@ p {
 
     .banner h2 {
         font-size: 36px;
+    }
+    .channel {
+        padding: 2px 4px;
     }
 }
 
