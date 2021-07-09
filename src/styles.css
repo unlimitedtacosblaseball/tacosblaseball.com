@@ -63,7 +63,6 @@ body {
 .nav_link {
     display: block;
     margin: 0px auto;
-    text-align: center;
     font-style: italic;
     text-decoration: underline;
 }
@@ -195,24 +194,24 @@ p {
     transform: rotateX(20deg);
 }
 
-
-/* emulating discord channel mention styles by evie */
-.channel {
+/* Subheader styles */
+[role="doc-subtitle"] {
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: 700;
-    padding: 1px 2px;
-    background-color: #3e42d180;
-    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-bottom: 18px;;
+    text-align: center;
 }
-.channel:hover {
-    background-color: #3e42d1;
-}
+
+/* END HEADER STYLES */
 
 /* aside styles for the welcome page */
 aside {
     width: calc(2.5rem * 6);
     text-align: center;
     clear: both;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
     background-color: #391c4080;
     border-radius: 8px;
     padding: 4px;
@@ -226,8 +225,71 @@ aside {
 .green-aside {
     border: solid medium #28c160;
 }
+.blue-aside {
+    border: solid medium #108797;
+}
 
-/* END HEADER STYLES */
+/* END aside styles */
+
+/* discord channel replica styles */
+
+/* emulating discord channel mention styles by evie */
+.channel {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    padding: 1px 2px;
+    background-color: #3e42d180;
+    border-radius: 4px;
+}
+.channel::before {
+    content: "#";
+    font-weight: 800;
+    padding: 0 2px;
+}
+.channel:hover {
+    background-color: #3e42d1;
+}
+
+/* emulating the actual discord channel sidebar styles by evie */
+
+.discord-list {
+    background-color: #23252a;
+    width: calc(2.5rem * 6.3);
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    color: #7c8085;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 16px;
+}
+
+.discord-list h4 {
+    font-size: 1rem;
+    padding: 4px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.discord-list h4:hover {
+    color: #d4d6d7;
+}
+
+.discord-list ul li {
+    padding: 4px;
+    border-radius: 4px;
+}
+.discord-list ul li:hover {
+    background-color: #27292f;
+    color: #d4d6d7;
+}
+
+.discord-list ul li::before {
+    content: "#";
+    font-weight: 800;
+    padding: 4px 8px 4px 4px;
+}
+
+/* END discord */
 
 /* eltrov added this for the BETA tag */
 #beta {
@@ -238,7 +300,7 @@ aside {
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     border-radius: 3px;
     position: absolute;
     left: 10px;
@@ -266,7 +328,7 @@ aside {
 
 @media screen and (min-width: 1000px) {
     html {
-        font-size: 22px;
+        font-size: 18px;
     }
 
     #pitcher_matcher {
