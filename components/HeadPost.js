@@ -10,8 +10,7 @@ export const HeadPost = ({ meta, isBlogPost }) => (
         ☕ {meta.readTime + ' min read'}
       </span>
     </div>
-    <style jsx>
-      {`
+    <style jsx>{`
         h1 {
           font-size: 1.5rem;
           font-weight: 700;

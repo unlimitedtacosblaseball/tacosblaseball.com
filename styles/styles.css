@@ -1,7 +1,7 @@
 /* Custom styling. Overrides sources where needed. */
 
 /* ADD FONTS */
-
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
 @import url('https://fonts.cdnfonts.com/css/chunkfive');
 /* END FONTS */
@@ -28,13 +28,6 @@ body {
 
 #root {
     margin: 0px;
-    padding: 0px;
-}
-
-.header {
-    width: 100%;
-    text-align: center;
-    margin: 18px 0px;
     padding: 0px;
 }
 
@@ -170,13 +163,6 @@ p {
 }
 
 /* BEGIN HEADER STYLES */
-
-.header {
-    /* background-color: #333; */
-    position: relative;
-    border-bottom: 5px solid #64376e;
-    perspective: 250px;
-}
 
 .header h1 {
     font-family: 'Pacifico';

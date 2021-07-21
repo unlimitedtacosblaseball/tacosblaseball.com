@@ -16,6 +16,12 @@ export default function Beta() {
             border-radius:3px;
             text-transform: uppercase;
             background:hsla(0, 0%, 39.6%, .65098);
+
+            /* positioning stuff */
+            border-radius: 3px;
+            position: absolute;
+            left: 10px;
+            top: -30px;
           }          
         `}
       </style>

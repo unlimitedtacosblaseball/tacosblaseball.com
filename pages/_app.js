@@ -4,7 +4,7 @@ import "../styles/styles.css"
 
 export default function App({ Component, pageProps }) {
   return (
-    <Layout pageTitle="Blog" description="My Personal Blog">
+    <Layout pageTitle="Tacos Blaseball" description="TacoBlaseball">
       <Component {...pageProps} />
     </Layout>
   )
