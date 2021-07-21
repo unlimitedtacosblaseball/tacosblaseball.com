@@ -1,3 +1,7 @@
+// styles/global.js
+import css from 'styled-jsx/css'
+
+export default css.global`
 /* Custom styling. Overrides sources where needed. */
 
 /* ADD FONTS */
@@ -348,3 +352,4 @@ aside {
 }
 
 /* END MEDIA QUERIES */
+`
