@@ -31,14 +31,14 @@ body {
     padding: 0px;
 }
 
-.footer {
+/* .footer {
     width: 100%;
     text-align: center;
     margin: 10px 0px;
     padding: 5px;
     border-top: 5px solid #64376e;
     perspective: 200px;
-}
+} */
 
 .main {
     width: 100%;
@@ -136,10 +136,6 @@ p {
     margin-bottom: 18px;
 }
 
-.yellow {
-    color: RGB(255, 224, 130);
-}
-
 .shelled1,
 .shelled2 {
     position: absolute;
@@ -164,7 +160,7 @@ p {
 
 /* BEGIN HEADER STYLES */
 
-.header h1 {
+/* .header h1 {
     font-family: 'Pacifico';
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 5px #fff, 2px 2px 10px #000;
     color: #9c80a6;
@@ -178,17 +174,17 @@ p {
     -webkit-text-stroke: 1px black;
     -webkit-text-fill-color: #FACF33;
     transform: rotateX(20deg);
-}
+} */
 
 /* Subheader styles */
-[role="doc-subtitle"] {
+/* [role="doc-subtitle"] {
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
     font-size: 1.5rem;
     margin-top: -1rem;
-    margin-bottom: 18px;;
+    margin-bottom: 18px;
     text-align: center;
-}
+} */
 
 /* END HEADER STYLES */
 
@@ -220,7 +216,7 @@ aside {
 /* discord channel replica styles */
 
 /* emulating discord channel mention styles by evie */
-.channel {
+/* .channel {
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: 600;
     padding: 1px 2px;
@@ -234,7 +230,7 @@ aside {
 }
 .channel:hover {
     background-color: #3e42d1;
-}
+} */
 
 /* emulating the actual discord channel sidebar styles by evie */
 

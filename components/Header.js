@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <>
       <nav>
-        <div class="header">
+        <div className="header">
           <Link href="/">
             <h1>The LA Unlimited Tacos</h1>
           </Link>
@@ -14,17 +14,17 @@ export default function Header() {
         </div>
       </nav>
       <style jsx>{`
-        nav {
+        .header {
           width: 100%;
           text-align: center;
           margin: 18px 0px;
-          padding: 0px;
-          padding-bottom: 5px;
+          padding: 0 0 5px 0;
           position: relative;
           /* border-bottom: 5px solid #64376e; */
           perspective: 250px;
         }
-        nav:after {
+
+        .header:after {
           content:'';
           position: absolute;
           bottom: 0;
@@ -35,9 +35,19 @@ export default function Header() {
           border-radius: 10px;
         }
 
-        h1 {
+        .header h1 {
           font-family: 'Pacifico';
           text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 5px #fff, 2px 2px 10px #000;
+          color: #9c80a6;
+        }
+
+        .header h2 {
+          font-family: 'ChunkFive', sans-serif;
+          color: #FACF33;
+          text-shadow: 0px 2px 5px #fff, 0px 2px 10px #000;
+          -webkit-text-stroke: 1px black;
+          -webkit-text-fill-color: #FACF33;
+          transform: rotateX(20deg);
         }
         `}
       </style>
