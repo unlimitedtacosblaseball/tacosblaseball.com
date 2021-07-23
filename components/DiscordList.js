@@ -2,7 +2,9 @@ export default function DiscordList({ title, contents }) {
   return (
     <>
       <div className="discord-list">
-        <h4>{title}</h4>
+        {title != null && 
+          <h4>{title}</h4>
+        }
         <ul>
           {contents.map((contents) => (
             <li>{ contents }</li>
@@ -20,6 +22,7 @@ export default function DiscordList({ title, contents }) {
         border-radius: 4px;
         padding: 4px;
         margin: 16px;
+        text-align: left;
       }
 
       .discord-list h4 {
