@@ -20,6 +20,12 @@ export default function Channel({ children }) {
           .channel:hover {
             background-color: #3e42d1;
           }
+
+          @media screen and (min-width: 1000px) {
+            .channel {
+              padding: 2px 4px;
+            }
+          }
         `}
       </style>
     </>

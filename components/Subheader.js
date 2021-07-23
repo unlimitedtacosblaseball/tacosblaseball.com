@@ -6,7 +6,7 @@ export default function Subheader({ children }) {
       <div role="doc-subtitle">
         <Yellow>
           { children }
-          </Yellow>
+        </Yellow>
       </div>
       <style jsx>{`
           /* Subheader styles */

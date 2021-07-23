@@ -2,7 +2,7 @@
 
 /* ADD FONTS */
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.cdnfonts.com/css/chunkfive');
 /* END FONTS */
 
@@ -17,6 +17,9 @@ html {
 
 body {
     font-weight: 400;
+
+    /* we should make it left aligned because it's more readable than center aligned. unfortunately making it left aligned breaks a lot of stuff */
+    text-align: center;
     background-color: #000;
     font-family: "Lora", "Courier New", monospace, serif;
     color: white;
@@ -98,7 +101,7 @@ img {
     width: 100%;
 }
 
-#pitcher_matcher {
+/* #pitcher_matcher {
     text-align: center;
     padding: 10px;
     background-color: rgb(100, 55, 110);
@@ -106,7 +109,7 @@ img {
     font-size: 24px;
     font-weight: 600;
     box-sizing: content-box;
-}
+} */
 
 h1 {
     font-weight: 600;
@@ -234,7 +237,7 @@ aside {
 
 /* emulating the actual discord channel sidebar styles by evie */
 
-.discord-list {
+/* .discord-list {
     background-color: #23252a;
     width: calc(2.5rem * 6.3);
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
@@ -269,7 +272,7 @@ aside {
     content: "#";
     font-weight: 800;
     padding: 4px 8px 4px 4px;
-}
+} */
 
 /* END discord */
 
@@ -296,9 +299,9 @@ aside {
         font-size: 18px;
     }
 
-    #pitcher_matcher {
+    /* #pitcher_matcher {
         font-size: calc(24px + 8 * ((100vw - 320px) / 680));
-    }
+    } */
 
     .banner h1 {
         font-size: 64px;
@@ -307,9 +310,9 @@ aside {
     .banner h2 {
         font-size: 36px;
     }
-    .channel {
+    /* .channel {
         padding: 2px 4px;
-    }
+    } */
 }
 
 /* END MEDIA QUERIES */
