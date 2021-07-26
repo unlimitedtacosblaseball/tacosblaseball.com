@@ -7,7 +7,7 @@ export default function DiscordList({ title, contents }) {
         }
         <ul>
           {contents.map((contents) => (
-            <li>{ contents }</li>
+            <li key={contents.id}>{ contents }</li>
           ))}
         </ul>
       </div>

@@ -6,7 +6,7 @@ export default function Header() {
     <>
       <nav>
         <div className="header">
-          <Link href="/">
+          <Link href="/" passHref>
             <h1>The LA Unlimited Tacos</h1>
           </Link>
           <h2 id="banner-subtext">Anti&#8209;Capitalist and proud of it</h2>
