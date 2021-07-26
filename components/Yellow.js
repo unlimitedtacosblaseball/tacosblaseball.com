@@ -2,7 +2,7 @@ export default function Yellow({ children }) {
   return (
     <>
       <span className="yellow">
-        { children }
+        {children}
       </span>
       <style jsx>{`
           .yellow {
