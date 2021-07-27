@@ -1,0 +1,28 @@
+{
+    "presets": [
+        "@babel/preset-react", "next/babel"
+    ],
+    "plugins": [
+        [
+            "babel-plugin-file-loader",
+            {
+                "extensions": [
+                    "otf",
+                    "eot",
+                    "woff",
+                    "woff2",
+                    "png",
+                    "jpg",
+                    "svg",
+                    "mp4",
+                    "gif",
+                    "ico"
+                ],
+                "publicPath": "/static/",
+                "outputPath": "static/",
+                "name": "[path][name].[ext]/[hash].[ext]",
+                "context": "babelrc"
+            }
+        ]
+    ]
+}
