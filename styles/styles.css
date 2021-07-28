@@ -35,6 +35,20 @@ body {
     padding: 0px;
 }
 
+a, a:hover {
+    color: rgb(255, 224, 130);
+    text-decoration: underline;
+}
+
+li {
+    text-align: left;
+}
+
+ul {
+    width: 75%;
+    margin: 0 auto;
+}
+
 .main {
     width: 100%;
     display: flex;
@@ -142,6 +156,17 @@ p {
     margin-top: 6px;
     margin-left: 25px
 } */
+
+/* clean up later */
+.reader-purple {
+    color: #a16dc3;
+    text-shadow: 0 0 20px #a16dc3;
+}
+
+.binky-blue {
+    color: #5988ff;
+    text-shadow: 0 0 20px #5988ff;
+}
 
 /* aside styles for the welcome page */
 aside {
