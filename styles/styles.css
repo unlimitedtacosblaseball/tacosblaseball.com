@@ -1,15 +1,16 @@
 /* Custom styling. Overrides sources where needed. */
 
 /* ADD FONTS */
-
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.cdnfonts.com/css/chunkfive');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /* END FONTS */
 
 html {
     /* font-size: 16pt; */
     max-width: 54rem;
-    padding: 18px 4rem;
+    padding: 1rem;
     margin: auto;
     text-rendering: optimizeLegibility;
     background-color: #000;
@@ -17,13 +18,16 @@ html {
 
 body {
     font-weight: 400;
+
+    /* we should make it left aligned because it's more readable than center aligned. unfortunately making it left aligned breaks a lot of stuff */
+    text-align: center;
     background-color: #000;
     font-family: "Lora", "Courier New", monospace, serif;
     color: white;
     margin: 0px;
     padding-top: 20px;
+    padding: 32px;
     border-radius: 20px;
-    text-align: center;
 }
 
 #root {
@@ -31,20 +35,18 @@ body {
     padding: 0px;
 }
 
-.header {
-    width: 100%;
-    text-align: center;
-    margin: 18px 0px;
-    padding: 0px;
+a, a:hover {
+    color: rgb(255, 224, 130);
+    text-decoration: underline;
 }
 
-.footer {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0px;
-    padding: 5px;
-    border-top: 5px solid #64376e;
-    perspective: 200px;
+li {
+    text-align: left;
+}
+
+ul {
+    width: 75%;
+    margin: 0 auto;
 }
 
 .main {
@@ -63,7 +65,6 @@ body {
 .nav_link {
     display: block;
     margin: 0px auto;
-    text-align: center;
     font-style: italic;
     text-decoration: underline;
 }
@@ -106,16 +107,6 @@ img {
     width: 100%;
 }
 
-#pitcher_matcher {
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(100, 55, 110);
-    border-radius: 30px;
-    font-size: 24px;
-    font-weight: 600;
-    box-sizing: content-box;
-}
-
 h1 {
     font-weight: 600;
     margin-bottom: 18px;
@@ -144,11 +135,7 @@ p {
     margin-bottom: 18px;
 }
 
-.yellow {
-    color: RGB(255, 224, 130);
-}
-
-.shelled1,
+/* .shelled1,
 .shelled2 {
     position: absolute;
     background-color: red;
@@ -168,51 +155,43 @@ p {
     transform: rotate(10deg);
     margin-top: 6px;
     margin-left: 25px
+} */
+
+/* clean up later */
+.reader-purple {
+    color: #a16dc3;
+    text-shadow: 0 0 20px #a16dc3;
 }
 
-/* BEGIN HEADER STYLES */
-
-.header {
-    /* background-color: #333; */
-    position: relative;
-    border-bottom: 5px solid #64376e;
-    perspective: 250px;
+.binky-blue {
+    color: #5988ff;
+    text-shadow: 0 0 20px #5988ff;
 }
 
-.header h1 {
-    font-family: 'Pacifico';
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000, 2px 2px 5px #fff, 2px 2px 10px #000;
-    color: #9c80a6;
-}
-
-.header h2,
-.footer h2 {
-    font-family: 'ChunkFive', sans-serif;
-    color: #FACF33;
-    text-shadow: 0px 2px 5px #fff, 0px 2px 10px #000;
-    -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: #FACF33;
-    transform: rotateX(20deg);
-}
-
-/* END HEADER STYLES */
-
-/* eltrov added this for the BETA tag */
-#beta {
-    background-color: #505050;
-    text-transform: uppercase;
-    margin: 10px;
-    padding: 5px;
+/* aside styles for the welcome page */
+aside {
+    width: calc(2.5rem * 6);
+    text-align: center;
+    clear: both;
     font-family: "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    font-weight: 700;
-    border-radius: 3px;
-    position: absolute;
-    left: 10px;
-    top: -30px;
+    background-color: #391c4080;
+    border-radius: 8px;
+    padding: 4px;
 }
-/* End BETA tag */
+.red-aside {
+    border: solid medium #cb1e27;
+}
+.yellow-aside {
+    border: solid medium #f8c828;
+}
+.green-aside {
+    border: solid medium #28c160;
+}
+.blue-aside {
+    border: solid medium #108797;
+}
+
+/* END aside styles */
 
 /* BEGIN MEDIA QUERIES */
 
@@ -234,14 +213,7 @@ p {
 
 @media screen and (min-width: 1000px) {
     html {
-        font-size: 22px;
-        background-image: url("https://media.discordapp.net/attachments/755560065645281360/755804072082276452/tile.png");
-        background-repeat: repeat;
-        background-attachment: fixed;
-    }
-
-    #pitcher_matcher {
-        font-size: calc(24px + 8 * ((100vw - 320px) / 680));
+        font-size: 18px;
     }
 
     .banner h1 {

@@ -1,0 +1,31 @@
+import { Post } from "../components/Post";
+import { posts } from "../getAllPosts";
+import Icon from "../components/Icon"
+
+export default function Vault() {
+  return (
+    <>
+      <div className="vault" style={{color: "rgb(255, 248, 199)"}}>
+        <Icon/>
+        <h2>Vault</h2>
+        <Icon/>
+      </div>
+      {posts.map((post) => (
+        <Post key={post.link} post={post} />
+      ))}
+      <style jsx>{`
+        .vault {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 3rem;
+          width: 100%;
+        }
+        .vault h2 {
+          margin: 0;
+        }
+
+      `}</style>
+    </>
+  );
+}
