@@ -5,10 +5,12 @@ export default function NavLink({ children }) {
         {children}
       </span>
       <style jsx>{`
+        .nav_link {
           display: block;
           margin: 0px auto;
           font-style: italic;
           text-decoration: underline;
+        }
         `}
       </style>
     </>

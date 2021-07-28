@@ -10905,11 +10905,11 @@ input[type=submit]:hover {
     cursor: pointer
 }
 
-a,
+/* a,
 a:hover {
     text-decoration: none;
     color: unset
-}
+} */
 
 ul {
     padding: 0;
@@ -10927,9 +10927,9 @@ ul {
     margin: 0
 }
 
-li {
+/* li {
     list-style-type: none
-}
+} */
 
 ::-webkit-scrollbar {
     width: 0;
