@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Beta from "./Beta/Beta"
+import Beta from "./Beta"
 
 export default function Header() {
   return (
@@ -7,7 +7,7 @@ export default function Header() {
       <nav>
         <div className="header">
           <Link href="/" passHref>
-            <h1>The -- --------- -----</h1>
+            <h1 className="fade-out-element">The LA Unlimited Tacos</h1>
           </Link>
           <h2 id="banner-subtext">oh no</h2>
           <Beta />
@@ -49,6 +49,19 @@ export default function Header() {
           -webkit-text-fill-color: #FACF33;
           transform: rotateX(20deg);
         }
+
+        .fade-out-element {
+          display: inline-block;
+          animation-name: fadeOut;
+          animation-duration 5s;
+          animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+          0% {opacity:1;}
+          100% {opacity:0;}
+        }
+        
         `}
       </style>
     </>
