@@ -15,7 +15,7 @@ export default function Layout({ children, pageTitle, description })
       <main>
         <Header />
         <div className="content">{children}</div>
-        <Footer />
+        {/* <Footer /> */}
       </main>
     </>
   );

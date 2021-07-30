@@ -7,9 +7,9 @@ export default function Header() {
       <nav>
         <div className="header">
           <Link href="/" passHref>
-            <h1>The LA Unlimited Tacos</h1>
+            <h1>The -- --------- -----</h1>
           </Link>
-          <h2 id="banner-subtext">Anti&#8209;Capitalist and proud of it</h2>
+          <h2 id="banner-subtext">oh no</h2>
           <Beta />
         </div>
       </nav>

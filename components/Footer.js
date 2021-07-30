@@ -8,7 +8,7 @@ export default function Footer() {
         <Link href="/" className="nav_link" passHref>
           <h3><Yellow>Go back home</Yellow></h3>
         </Link>
-        <p>Brought to you by the LA Unlimited Tacos.</p>
+        <p>Brought to you by the -- --------- -----.</p>
         <h2>EAT</h2>
       </div>
 
