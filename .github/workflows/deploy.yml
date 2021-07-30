@@ -27,6 +27,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.secretkey }}
           aws-region: us-east-1
 
-      # Runs a single command using the runners shell
+      - name: Run NPM Install
+        run: npm install
+      
       - name: Run NPM Deploy
         run: npm run deploy
