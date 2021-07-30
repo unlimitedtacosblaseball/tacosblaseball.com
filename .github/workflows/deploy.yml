@@ -27,8 +27,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.secretkey }}
           aws-region: us-east-1
 
-      - name: Run NPM Install
-        run: npm install
+      - name: Run NPM Install for CI environment
+        run: npm ci
       
       - name: Run NPM Deploy
         run: npm run deploy
