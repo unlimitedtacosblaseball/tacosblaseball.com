@@ -7,7 +7,11 @@ export default function Header() {
       <nav>
         <div className="header">
           <Link href="/" passHref>
-            <h1 className="fade-out-element">The LA Unlimited Tacos</h1>
+            <div>
+              <h1 className="fade-out-element">The LA Unlimited Tacos</h1>
+              <h1 className="fade-in-element">The -- --------- -----</h1>
+              <h1 className="placeholder">The LA Unlimited Tacos</h1>
+            </div>
           </Link>
           <h2 id="banner-subtext">oh no</h2>
           <Beta />
@@ -51,15 +55,34 @@ export default function Header() {
         }
 
         .fade-out-element {
-          display: inline-block;
+          position:relative;
           animation-name: fadeOut;
-          animation-duration 5s;
+          animation-duration 10s;
           animation-fill-mode: forwards;
+          margin-bottom: -48px;
+        }
+        
+        .fade-in-element {
+          position:relative;
+          animation-name: fadeIn;
+          animation-duration 10s;
+          animation-fill-mode: forwards;
+          margin-bottom: -48px;
+        }
+
+        .placeholder {
+          opacity: 0;
         }
 
         @keyframes fadeOut {
           0% {opacity:1;}
+          50% {opacity:0;}
           100% {opacity:0;}
+        }
+        @keyframes fadeIn {
+          0% {opacity:0;}
+          50% {opacity:0;}
+          100% {opacity:1;}
         }
         
         `}
