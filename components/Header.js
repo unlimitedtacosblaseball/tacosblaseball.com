@@ -49,6 +49,38 @@ export default function Header() {
           -webkit-text-fill-color: #FACF33;
           transform: rotateX(20deg);
         }
+
+        /* .fade-out-element {
+          position:relative;
+          animation-name: fadeOut;
+          animation-duration 10s;
+          animation-fill-mode: forwards;
+          margin-bottom: -48px;
+        }
+        
+        .fade-in-element {
+          position:relative;
+          animation-name: fadeIn;
+          animation-duration 10s;
+          animation-fill-mode: forwards;
+          margin-bottom: -48px;
+        }
+
+        .placeholder {
+          opacity: 0;
+        }
+
+        @keyframes fadeOut {
+          0% {opacity:1;}
+          50% {opacity:0;}
+          100% {opacity:0;}
+        }
+        @keyframes fadeIn {
+          0% {opacity:0;}
+          50% {opacity:0;}
+          100% {opacity:1;}
+        } */
+        
         `}
       </style>
     </>
