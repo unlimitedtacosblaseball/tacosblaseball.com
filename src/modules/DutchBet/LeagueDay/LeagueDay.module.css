@@ -1,0 +1,37 @@
+.leagueScheduleDayWrapper {
+	height: 115px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.leagueScheduleDay {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 60px;
+	height: 70px;
+	border-radius: 5px;
+	align-items: center;
+	padding: 5px;
+	margin-top: 10px;
+	background: rgba(30, 30, 30, .6392156862745098);
+}
+
+.leagueScheduleDayNum {
+	font-family: "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+	.leagueScheduleDayWrapper {
+		height: 100px;
+	}
+	
+	/* .leagueScheduleDay {
+		width: 45px;
+		height: 55px;
+		font-size: 12px;
+	} */
+}

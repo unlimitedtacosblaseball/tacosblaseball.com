@@ -1,0 +1,226 @@
+/* Custom styling. Overrides sources where needed. */
+
+/* ADD FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap&family=Pacifico&family=Open+Sans:ital,wght@0,300..800;1,300..800');
+@import url('https://fonts.cdnfonts.com/css/chunkfive');
+/* END FONTS */
+
+html {
+    /* font-size: 16pt; */
+    max-width: 54rem;
+    padding: 1rem;
+    margin: auto;
+    text-rendering: optimizeLegibility;
+    background-color: #000;
+}
+
+body {
+    font-weight: 400;
+
+    /* we should make it left aligned because it's more readable than center aligned. unfortunately making it left aligned breaks a lot of stuff */
+    text-align: center;
+    background-color: #000;
+    font-family: "Lora", "Courier New", monospace, serif;
+    color: white;
+    margin: 0px;
+    padding-top: 20px;
+    padding: 32px;
+    border-radius: 20px;
+}
+
+#root {
+    margin: 0px;
+    padding: 0px;
+}
+
+a, a:hover {
+    color: rgb(255, 224, 130);
+    text-decoration: underline;
+}
+
+li {
+    text-align: left;
+}
+
+ul {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+#start-text {
+    flex-grow: 2;
+}
+
+.nav_link {
+    display: block;
+    margin: 0px auto;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.nav_link:active,
+.nav_link:hover,
+.nav_link:link,
+.nav_link:visited {
+    text-decoration: underline;
+}
+
+#pics {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#pics div {
+    flex: 0 0 40%;
+}
+
+.img-box {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.vid-box {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img {
+    max-width: 512px;
+    min-width: 128px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+h2 {
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+h3 {
+    margin: 0px auto;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+h4 {
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+/* .shelled1,
+.shelled2 {
+    position: absolute;
+    background-color: red;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    padding: 0 5px;
+    border-radius: 5px
+}
+
+.shelled1 {
+    transform: rotate(-7deg);
+    margin-top: 5px;
+    margin-left: 30px
+}
+
+.shelled2 {
+    transform: rotate(10deg);
+    margin-top: 6px;
+    margin-left: 25px
+} */
+
+/* clean up later */
+.reader-purple {
+    color: #a16dc3;
+    text-shadow: 0 0 20px #a16dc3;
+}
+
+.binky-blue {
+    color: #5988ff;
+    text-shadow: 0 0 20px #5988ff;
+}
+
+/* aside styles for the welcome page */
+aside {
+    width: calc(2.5rem * 6);
+    text-align: center;
+    clear: both;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #391c4080;
+    border-radius: 8px;
+    padding: 4px;
+}
+.red-aside {
+    border: solid medium #cb1e27;
+}
+.yellow-aside {
+    border: solid medium #f8c828;
+}
+.green-aside {
+    border: solid medium #28c160;
+}
+.blue-aside {
+    border: solid medium #108797;
+}
+
+/* END aside styles */
+
+/* BEGIN MEDIA QUERIES */
+
+/* 
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+    #pitcher_matcher {
+        font-size: calc(16px + 4 * ((100vw - 320px) / 680));
+    }
+    .banner h1 {
+        font-size: calc(48px + 16 * ((100vw - 320px) / 680));
+    }
+    .banner h2 {
+        font-size: calc(24px + 12 * ((100vw - 320px) / 680));
+    }
+} */
+
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 18px;
+    }
+
+    .banner h1 {
+        font-size: 64px;
+    }
+
+    .banner h2 {
+        font-size: 36px;
+    }
+}
+
+/* END MEDIA QUERIES */

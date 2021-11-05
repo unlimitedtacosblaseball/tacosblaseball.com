@@ -1,0 +1,43 @@
+/* return <div className={[styles.betListMatchupsTeam, styles.props.selected].join(' ')}>
+<div className={styles.betListMatupsTeamIcon} style={{backgroundColor: props.teamColor}}>
+	{props.teamEmoji}
+</div>
+</div>
+} */
+
+.betListMatchupsTeam {
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	align-items: center;
+	height: 150px;
+	justify-content: center;
+	position: relative;
+	background: rgba(30,30,30,.6392156862745098);
+}
+
+.Selected {
+	color: #000;
+	background: #fff;
+}
+
+.Fade {
+	opacity: .5;
+}
+
+.betListMatchupsTeamIcon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.betListMatchupsTeamOdds {
+	font-size: 26px;
+	font-weight: 700;
+	font-family: "Lora", "Courier New", monospace, serif;
+}

@@ -1,0 +1,14 @@
+.betListMatchupsGroup {
+	display: grid;
+	grid-template-columns: 75px 75px;
+	border-radius: 5px;
+}
+
+.betListMatchups {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	grid-gap: 15px;
+	gap: 15px;
+	position: relative;
+}
