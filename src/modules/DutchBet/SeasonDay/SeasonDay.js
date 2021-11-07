@@ -32,8 +32,8 @@ const SeasonDay = (props) => {
       <div className={styles.leagueScroll}>
         <div className={styles.leagueWrapper}>
           <div className={[styles.leagueSchedule, styles. leagueScheduleBets].join(" ")} id={styles.scheduleContainer} name="Container">
-            {days.map((days) => (
-              <LeagueDay days={days} curDay={curDay} />
+            {days.map((day) => (
+              <LeagueDay day={day} curDay={curDay} key={day}/>
             ))}
           </div>
         </div>

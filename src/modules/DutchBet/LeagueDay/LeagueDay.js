@@ -3,23 +3,22 @@ import { useRef, useEffect } from 'react';
 import styles from './LeagueDay.module.css'
 
 const LeagueDay = (props) => {
-	const days = props.days;
+	const day = props.day;
 	const curRef = useRef();
 	
 	function giveCurrentDay() {
-		console.log(days);
-		return days;
+		return day;
 	}
 	
 	useEffect(() => {
-		if (props.days == props.curDay) {
+		if (props.day == props.curDay) {
 			curRef.current.scrollIntoView();
 		}
 	});
 	
-	return <div ref={curRef} onClick={giveCurrentDay} className={styles.leagueScheduleDayWrapper} name={days.toString()} key={days.toString()}>
+	return <div ref={curRef} onClick={giveCurrentDay} className={styles.leagueScheduleDayWrapper} name={day.toString()} key={day.toString()}>
 			<div className={styles.leagueScheduleDay}>
-				<div className={styles.leagueScheduleDayNum}>{days.toString()}</div>
+				<div className={styles.leagueScheduleDayNum}>{day.toString()}</div>
 			</div>
 	  </div>
 }
