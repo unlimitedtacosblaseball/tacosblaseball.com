@@ -1,27 +1,43 @@
-import BetterWrapper from '@/modules/DutchBet/BetterWrapper/BetterWrapper'
+import useSWR from "swr";
+import { useState, useEffect } from "react";
+
+import SeasonDay from "@/modules/DutchBet/SeasonDay/SeasonDay";
+import Matchups from "@/modules/DutchBet/Matchups/Matchups";
+
+const tyiliana = "https://api.sibr.dev/corsmechanics/";
+const blaseballbase = "api.blaseball.com"; // or as I like to call it, Baseball
+const baseurl = tyiliana + blaseballbase + "/database/simulationData";
+const modurl = tyiliana + blaseballbase + "/bets/availableBets?day=";
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function DutchBet() {
+  const { data: result, error } = useSWR(baseurl, fetcher);
+  {
+    /* 	const { data: bets, size, setSize} */
+  }
 
-	// i stole this from iliana ty iliana
-	// const [sim, setSim] = useState({
-	// 	loading: false,
-	// 	data: null,
-	// });
-	// 
-	// useEffect(() => {
-	// 	setSim({ loading: true });
-	// 	const apiUrl = tyiliana + blaseballbase + '/database/simulationData';
-	// 	fetch(apiUrl)
-	// 		.then((res) => res.json())
-	// 		.then((data) => {
-	// 			setSim({ loading: false, data: data });
-	// 		})
-	// 		.then((data) => console.log(sim.data));
-	// }, [setSim]);
-	
-	return (
-		<>
-			<BetterWrapper />
-		</>
-	);
+  const [day, setDay] = useState(null);
+  useEffect(() => {
+    if (result) {
+      if (day == null) {
+        setDay(result.day);
+      }
+    }
+  }, [result]);
+
+  if (error) return <p>oh no</p>;
+  if (!result) return <p>Please Wait</p>;
+
+  return (
+    <>
+      <SeasonDay
+        day={day}
+        curDay={result.day}
+        setDay={setDay}
+        season={result.season}
+      />
+      <Matchups day={day} setday={setDay} />
+    </>
+  );
 }
