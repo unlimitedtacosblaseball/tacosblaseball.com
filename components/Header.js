@@ -8,12 +8,10 @@ export default function Header() {
         <div className="header">
           <Link href="/" passHref>
             <div>
-              <h1 className="fade-out-element">The LA Unlimited Tacos</h1>
-              <h1 className="fade-in-element">The -- --------- -----</h1>
-              <h1 className="placeholder">The LA Unlimited Tacos</h1>
+              <h1>The LA Unlimited Tacos</h1>
             </div>
           </Link>
-          <h2 id="banner-subtext">oh no</h2>
+          <h2 id="banner-subtext">Anti&#8209;Capitalist and proud of it</h2>
           <Beta />
         </div>
       </nav>
